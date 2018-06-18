@@ -21,10 +21,11 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Compiling the Node.js code
-      - mocha HelloWorld.js
+      - bash git_tagging.sh
+      - mocha helloworld.js
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - HelloWorld.js
+    - helloworld.js
