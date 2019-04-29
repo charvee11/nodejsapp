@@ -32,8 +32,8 @@ if [ -n "$last_tag" ]; then
         minor_max="${MINOR_VERSION}";
     fi
     echo 'Switching to new version:' $major_max'.'$minor_max'.'$patch_max''
-    $(git config --global user.email  )
-    $(git config --global user.name )
+    $(git config --global user.email "charvee11@gmail.com"  )
+    $(git config --global user.name "charvee11")
     $(git tag -a $branch_name-$major_max.$minor_max.$patch_max $branch_name -m "Version $major_max.$minor_max.$patch_max")
     echo 'Push tag to remote'
     $(git push origin $branch_name-$major_max.$minor_max.$patch_max $branch_name)

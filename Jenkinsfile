@@ -21,12 +21,7 @@ pipeline {
                   sh 'echo "password $GIT_PASS" >> $WORKSPACE/.netrc'
                   sh 'echo "protocol http" >> $WORKSPACE/.netrc'
                   sh 'chmod 600 $WORKSPACE/.netrc'
-        //        sh "git config --global user.name 'charvee.punia'"
-         //       sh "git config --global user.email 'charvee.punia@decimal.co.in'" 
-
-         //       withCredentials([[$class: 'UsernamePasswordMultiBinding', credentialsId: 'gitlab_external', usernameVariable: 'GIT_USER', passwordVariable: 'GIT_PASS']]) 
-         //       {
- //             sh 'git clone -b $BRANCH_NAME $GIT_REPO'
+          //        sh 'git clone -b $BRANCH_NAME $GIT_REPO'
                 sh 'echo Code Building started......'
                 sh 'ls'
  //                sh 'chmod a+rwx build.sh'
